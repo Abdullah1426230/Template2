@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --Dblue: hsl(229, 23%, 23%);
+    --Lgray: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%);
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+main {
+    position: relative;
+}
+
+#bottom {
+    position: absolute;
+    right: -550px;
+    max-width: 900px;
+    /* width: 80%; */
+    /* bottom: 30%; */
+    top: 337px;
+}
+
+#top {
+    position: absolute;
+    left: -550px;
+    /* width: 80%; */
+    max-width: 978px;
+    top: -532px;
+}
+
+article {
+    max-width: 500px;
+    min-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 18px;
+    z-index: 222;
+    transform: translate(-50%, 50%);
+    margin: 0 12.5px;
+    height: 500px;
+    overflow: hidden;
+    background-color: white;
+}
+
+article>img:first-of-type {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container img {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name {
+    margin-top: 80px;
+    position: relative;
+}
+
+.name h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.name span {
+    margin-left: 15px;
+    font-size: 30px;
+    color: var(--Lgray);
+}
+
+.name p {
+    margin-bottom: 40px;
+    color: var(--Lgray);
+}
+
+.nums {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 25px;
+}
+
+.nums p {
+    letter-spacing: 3px;
+    color: var(--gray);
+    padding-top: 10px;
+}
+
+@media (width:375px) {
+    article {
+        transform: translate(-50%, 25%);
+        margin: 0;
+    }
+}
+
+@media (min-width:1440px) {
+    article {
+        width: 500px;
+        height: 500px;
+    }
+    .nums {
+        padding: 25px;
+    }
+}
+
+
+/* 
+
+
+
+
+Victor Crest
+  26
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  Photos
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> */
